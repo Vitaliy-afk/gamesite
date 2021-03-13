@@ -1,0 +1,323 @@
+.header {
+	border-bottom: #7d0d0d 2px solid;
+    box-shadow: 0 3px 16px #0009;
+	background: rgb(30,116,139);
+	background: linear-gradient(90deg, rgba(30,116,139,1) 12%, rgba(0,27,36,1) 100%, rgba(233,233,233,1) 100%);
+    padding: 25px 0 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	z-index: 1000;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			display: block;
+			@include media {
+				img {
+				}
+			}
+		}
+	}
+}
+
+.header .buttons>.logged {
+    width: auto;
+}
+
+.header .buttons>.logged .profile2 span {
+    position: absolute;
+    left: 80%;
+    font: 10px roboto,Tahoma;
+    background: #da0606;
+    border-radius: 2px;
+    line-height: 14px;
+    text-align: center;
+    padding: 2px 4px 1px;
+    color: #fff;
+    box-shadow: 0 1px 5px #5f0101;
+}
+
+
+header .buttons>.logged>div {
+    position: absolute;
+    padding: 0;
+    right: 0px;
+    white-space: nowrap;
+    top: -8px;
+    background: #1e748b;
+    background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1e748b), color-stop(100%, #001b24), to(#e9e9e9));
+    background: -o-linear-gradient(left, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+    background: linear-gradient(
+90deg
+, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+    border: #424242 1px solid;
+    box-shadow: 0 1px 10px #131313;
+    border-radius: 3px;
+	z-index: 1003;
+}
+
+
+
+.header .submenu li a span i{
+	margin-right: 5px;
+}
+
+.header .submenu li a:hover {
+	background: #2d2d2d;
+}
+
+
+.header .buttons>.logged ul>li {
+	&:before {
+    	content: '';
+    	border-bottom: #3e3e3e 1px solid;
+    	position: absolute;
+		top: 0;
+		left: 5%;
+		width: 90%;
+	}
+}
+
+.header .buttons>.logged ul li i {
+    margin-right: 7px;
+    width: 14px;
+}
+
+.header .buttons>.logged ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 46px 8px 15px;
+	font-size: 14px;
+	color: $white;
+}
+
+.header .buttons>.logged ul li a:hover {
+	color: #da0606;
+}
+
+.header .buttons>.logged ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.header .buttons>.logged>div .pl {
+    font: 700 16px open sans,Verdana,Tahoma;
+    display: inline-block;
+    margin: 9px 61px 10px 15px;
+    text-decoration: none;
+	line-height: 23px;
+}
+
+
+.header .buttons>.logged .profile2 {
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    border-radius: 60px!important;
+    margin: 4px 25px 0 8px;
+	background-size: contain;
+	position: absolute;
+	left: 80%;
+	top: 25px; cursor: pointer;
+}
+
+
+.header .buttons div li {
+	position: relative;
+
+}
+
+
+
+.profile {
+	overflow: hidden;
+	visibility: hidden;
+	.profile-active & {
+		visibility: visible;
+		transition: 0.9s;
+		box-shadow: 0 3px 16px #0009;
+		border-right: #7d0d0d 2px solid;
+		
+	}
+	
+}
+
+
+.profile2 {
+	background-image: url('https://vgtimes.ru/templates/vgtimes/images/noavatar.png');
+	display: block;
+}
+
+.header .buttons {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+
+.submenu {
+	@extend %listreset;
+	position: absolute;
+	background: #242121;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .27s ease-in-out, visibility .27s ease-in-out;
+	box-shadow: 0 1px 10px #131313;
+	// padding: 9px 25px 9px 10px;
+	border: 2px solid #3e403b;
+}
+
+.submenu li:hover {
+	background: #7d0d0d;
+}
+
+
+.progress {
+	height:20px;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	border-radius:10px;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+}
+
+
+// .progress>span{
+// 	position:relative;
+// 	float:left;
+// 	margin:0 -1px;
+// 	min-width:30px;
+// 	height:4px;
+// 	line-height:16px;
+// 	text-align:right;
+// 	background:#ccc;
+// 	border:1px solid;
+// 	border-color:#bfbfbf #b3b3b3 #9e9e9e;
+// 	border-radius:10px;
+// 	background-image:-webkit-linear-gradient(top,#f0f0f0,#dbdbdb 70%,#ccc);
+// 	background-image:-moz-linear-gradient(top,#f0f0f0,#dbdbdb 70%,#ccc);
+// 	background-image:-o-linear-gradient(top,#f0f0f0,#dbdbdb 70%,#ccc);
+// 	background-image:linear-gradient(to bottom,#f0f0f0,#dbdbdb 70%,#ccc);
+// }
+
+
+// .progress>span>span{
+// 	padding:0 8px;
+// 	font-size:11px;
+// 	font-weight:bold;
+// 	color:#404040;
+// 	color:rgba(0,0,0,0.7);
+// 	text-shadow:0 1px rgba(255,255,255,0.4)
+// }
+
+
+// .progress>span:before{
+// 	content:'';
+// 	position:absolute;
+// 	top:0;
+// 	bottom:0;
+// 	left:0;
+// 	right:0;
+// 	z-index:1;
+// 	height:18px; 
+// 	border-radius:10px
+// }
+
+
+// .progress .green{
+// 	background:#c44040;
+// 	border-color:#9e0a0a #f50404;
+// 	background-image:-webkit-linear-gradient(top,#fa0404,#df0e0e 70%,#e01f1f);
+// 	background-image:-o-linear-gradient(top,#df3535,#cc2c2c 70%,#da271b);
+// 	background-image:linear-gradient(to bottom,#db1212,#e0271a 70%,#d31919);
+// }
+
+#sidebar {
+	@extend %listreset;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+#sidebar a {
+	color: $white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#sidebar .submenu li a {
+	padding: 9px 25px 9px 10px;
+    display: block;
+}
+
+
+#sidebar li:hover .submenu {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+#social-nav-holder {
+	display: flex;
+	// background: rgb(65, 64, 64);
+	padding: 5px 5px;
+	width: 30%;
+	justify-content: space-around;
+	border-radius: 15px;
+	font-size: 20px;
+}
+
+#social-nav-holder a:hover{
+	color: #e02832;
+}
+
+#social-nav-holder a {
+	color: rgb(156, 166, 168);
+}
+
+
+#sidebar > .f_search {
+	padding: 0 100px 0 20px;
+    white-space: nowrap;
+	display: flex;
+	width: 100%;
+	border: 0;
+}
+
+#sidebar > li {
+	margin: 0 0 0 10px;
+}
+
+.header .hldr {
+	width: 100%;
+	margin-right: 10px;
+	border-radius: 15px;
+	background: #1e748b;
+}
+
+.header .logo {
+	position: relative;
+	right: 80px;
+	color: wheat;
+	margin-right: 10px;
+}
+
+
+#sidebar a:hover {
+	color: #e02832;
+}
+
+.header .fs_inp {
+	border: 0;
+    background: 0 0;
+    width: 100%;
+    font: normal 14px/14px 'Roboto',Tahoma,Verdana;
+    outline: none;
+    color: #fff;
+}

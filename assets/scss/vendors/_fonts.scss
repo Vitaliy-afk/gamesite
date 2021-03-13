@@ -1,0 +1,57 @@
+
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url("../fonts/Gotham-Book.woff");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Light.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Medium.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_RobotoCondensed-Bold';
+	src: url("../fonts/RobotoCondensed-Bold.eot");
+	src: local('☺'), url("../fonts/RobotoCondensed-Bold.woff") format('woff') ;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Open-Sans';
+    src: url("../fonts/OpenSans-Regular.eot"),
+        url('../fonts/MyriadProRegular.woff2') format('woff2');
+    src: local('☺'), url("../fonts/OpenSans-Regular") format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url("../components/fonts/OpenSans-ExtraBold.eot"), /* IE9 Compat Modes */
+      url("../components/fonts/OpenSans-ExtraBold.otf") format("opentype"), /* Open Type Font */
+      url("../components/fonts/OpenSans-ExtraBold.svg") format("svg"), /* Legacy iOS */
+      url("../components/fonts/OpenSans-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../components/fonts/OpenSans-Regular.woff") format("woff"), /* Modern Browsers */
+      url("../components/fonts/OpenSans-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }

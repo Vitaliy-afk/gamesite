@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+#wrapper {
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 1212px;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.resize-active * {
+    transition: none !important;
+}
+
+body {
+    // background-image: url('/assets/image/fon.jpg');
+    background: rgb(30,124,139);
+background: linear-gradient(90deg, rgba(30,124,139,1) 0%, rgba(233,233,233,1) 100%, rgba(0,27,36,1) 100%);
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    
+}

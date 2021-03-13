@@ -1,0 +1,31 @@
+footer {
+    margin: 50px 0 50px 0
+}
+
+
+.footer-info-list {
+    @extend %listreset;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-info-list a {
+    color: $white;
+    font-size: 12px;
+}
+
+.footer-info-list li {
+    margin-right: 30px;
+    
+}
+
+footer span {
+    color: $white;
+    text-align: center;
+    display: block;
+    padding: 2px;
+    font-size: 12px;
+}

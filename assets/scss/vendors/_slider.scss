@@ -1,0 +1,86 @@
+.slider {
+    width: 100%;
+}
+
+.slider .slick-prev.slick-arrow {
+    font-size: 0;
+
+}
+
+.slider .slider__item-card {
+    color: white;
+}
+
+.slider .slider__item-card div {
+    position: absolute;
+    bottom: 0;
+    margin-top: 30p;
+    background: #6858583d;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+}
+
+
+.slider__item-card {
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.slider-block .row.slick-dots {
+    display: none;
+}
+
+
+.slider .slick-arrow {
+    position: absolute;
+    z-index: 50;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    top: 26%;
+}
+
+.slider .slick-prev.slick-arrow {
+    background: transparent url('/assets/image/arrow/arrow-left.png') no-repeat 0 0;
+    box-shadow: 0 3px 16px #0009;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0%;
+    background-color: transparent;
+}
+
+
+.slider .slick-next.slick-arrow {
+    background: transparent url('/assets/image/arrow/arrow-right.png') no-repeat 0 0;
+    box-shadow: 0 3px 16px #0009;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0%;
+}
+
+
+.slider-block button.slick-next.slick-arrow {
+    outline: none;
+}
+
+.slider-block button.slick-prev.slick-arrow {
+    outline: none;
+}
+
+.slick-list {
+    overflow: hidden;
+}

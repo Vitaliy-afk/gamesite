@@ -1,0 +1,229 @@
+
+.t-blocks  {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+.article {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article-block {
+    color: $white;
+    text-align: center;
+    padding: 170px 30px 30px 30px;
+    min-height: 300px;
+    align-items: center;
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    transition: box-shadow .2s ease-in-out;
+    text-decoration: none;
+}
+
+.article-block >a  {
+    display: block;
+    height: 100%;
+}
+
+
+
+
+.row {
+    position: relative;
+}
+
+
+.row .slick-arrow {
+    position: absolute;
+    z-index: 50;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    bottom: 25%;
+}
+
+
+.row .slick-prev.slick-arrow {
+    background: transparent url('/assets/image/arrow/arrow-left.png') no-repeat 0 0;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    right: 80%;
+    transition: .3s ease-in-out;
+    &:hover {
+        box-shadow: 0 3px 16px #0009;
+    }
+    
+}
+
+
+
+
+.row .slick-next.slick-arrow {
+    background: transparent url('/assets/image/arrow/arrow-right.png') no-repeat 0 0;
+    color: $white;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 80%;
+    &:hover {
+        box-shadow: 0 3px 16px #0009;
+    }
+}
+
+.image-holder a {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+
+.article-block a .title {
+    padding: 2% 2% 2% 0%;
+    text-shadow: 0 1px 3px #000;
+    font: 700 18px open sans,sans-serif,Verdana,Tahoma;
+    text-decoration: none;
+    z-index: 2;
+    color: #ececec;
+    padding-top: 100px;
+}
+
+.article-block > a {
+    text-decoration: none;
+    display: block;
+}
+  
+.image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.article-block a .title .ttype{
+    color: rgb(24, 15, 15);
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Jomhuria', cursive;
+    color: bisque;
+}
+
+.article-block .title span {
+    font-size: 0.6em;
+    color: bisque;
+    padding-top: 10px;
+    
+}
+
+.article-block a:hover {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.486);
+    }
+}
+
+.article-block a img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+.article-block .t-comments {
+    color: rgb(216, 19, 19);
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.article-block .t-comments:hover {
+    text-decoration: underline;
+}
+
+.features .m-blocks .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.features .m-blocks .item-block {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.features .m-blocks .item-block:hover {
+    background: linear-gradient(90deg, rgba(30,124,139,1) 0%, rgba(233,233,233,1) 100%, rgba(0,27,36,1) 100%);
+    -moz-box-shadow: 16px -5px 23px -8px rgba(0,0,0,0.75);
+    box-shadow: 16px -5px 23px -8px rgba(0,0,0,0.75);
+}
+
+
+
+.next-pages {
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+
+.next-pages a:hover {
+    text-decoration: underline;
+}
+
+.features .m-blocks .row .page-select span {
+    color: bisque;
+}
+
+.features{
+    .m-blocks {
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.features .m-blocks h3 {
+    margin-bottom: 35px;
+    text-align: center;
+    color: $white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 5px 0px 2px rgba(80, 184, 179, 0.59);
+}
+
+.features .m-blocks h3 {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    
+}

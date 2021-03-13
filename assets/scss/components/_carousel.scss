@@ -1,0 +1,117 @@
+.carouselTicker {
+    overflow: hidden;
+    box-sizing: content-box;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.ticker {
+    color: #fff;
+}
+
+.carouselTicker__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: content-box;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 50s;
+    backface-visibility: hidden;
+    will-change : transform;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+}
+
+.carouselTicker__item {
+    margin: 0;
+    float: left;
+    list-style-type: none;
+}
+
+.ticker__slide {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    height: 48px;
+    outline: 0;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ticker__val {
+    margin-left: 5px;
+}
+
+.grow-up {
+    color: #359acc;
+}
+
+.grow-down {
+    color: #f13c3c;
+}
+
+.ticker .grow-down:after, .ticker .grow-up:after {
+    content: '';
+    position: relative;
+    right: -2px;
+    width: 0;
+    height: 0;
+}
+
+.ticker .grow-down:after {
+    top: 12px;
+    border-top: 6px solid #f13c3c;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.ticker .grow-up:after {
+    bottom: 12px;
+    border-bottom: 6px solid #009cd1;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0,0,0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(-100%,0,0);
+    }
+}
+
+.table-instruments {
+  text-align: center;
+}
+
+.positive-price {
+  padding: 20px;
+    background: rgba(0,156,209,.2);
+}
+
+.table-instruments__price.positive-price {
+    animation: positive-tic 1s ease-out infinite;
+}
+
+@keyframes positive-tic {
+    0% {
+        background-color: rgba(22,138,207,.2)
+    }
+
+    40% {
+        background-color: rgba(22,138,207,.2)
+    }
+
+    100% {
+        background-color: transparent
+    }
+}
+

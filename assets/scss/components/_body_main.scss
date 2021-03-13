@@ -1,0 +1,142 @@
+
+.body_main {
+    position: relative;
+    max-width: 1040px;
+    margin: 0 auto;
+    z-index: 3;
+    background: rgb(30,116,139);
+    background: linear-gradient(90deg, rgba(30,116,139,1) 12%, rgba(0,27,36,1) 100%, rgba(233,233,233,1) 100%);
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    image-rendering: auto;
+    padding: 100px 20px 0px;
+    border: 2px solid #3e403b;
+    box-shadow: 0 1px 10px #131313;
+}
+
+.top_games .top_games_link {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.top_games {
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #adadad;
+    font: 15px/36px 'Roboto',sans-serif;
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+}
+
+.top_games .more {
+    position: absolute;
+    right: 12px;
+    font: 15px roboto,Verdana,Tahoma;
+    text-decoration: none;
+    color: #adadad;
+    top: 6px;
+}
+
+.body_main .slider .slider__item-card {
+    position: relative;
+}
+
+.body_main .slider .slider__item-card > a {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    color: #adadad;
+    text-decoration: none;
+    font-family: roboto,sans-serif;
+    height: auto;
+    img {
+        width: 100%;
+    }
+    + a {
+        position: absolute;
+        top: 0;
+    }
+}
+
+
+
+.slider__item {
+    height: 135px ;
+}
+
+
+.body_main .slider .slider__item:hover {
+    border: 2px solid grey;
+}
+
+.body_main .slider .slider__item-card div:hover {
+    color: #e02832;
+}
+
+.slider__item {
+    margin: 0 5px 0 0;
+}
+
+.body_main .slider .slider__item a i {
+    margin-right: 5px;
+}
+
+
+.top_rate_games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.main-rows {
+    display: flex;
+}
+
+
+
+
+
+
+
+.hidden{
+    display:none;
+}
+
+#controls {
+    display: none;
+    position: absolute;
+    transform: rotate(270deg);
+    bottom: 15px;
+    left: 23px;
+    width: 50px;
+    height: 50px;
+}
+
+#playBtn {
+    border: solid 1px #333;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    height: 2em;
+    width: 5em;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+}
+
+
+video poster {
+    display: none;
+}

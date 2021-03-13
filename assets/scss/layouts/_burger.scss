@@ -1,0 +1,154 @@
+//*BURGER*//
+
+
+.nav-drop {
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    overflow-y: auto;
+	z-index: 10000;
+    transform: translate(-100%, 0);
+	visibility: hidden;
+	.nav-active & {
+		visibility: visible;
+		transform: translate(0, 0);
+    	transition: 0.9s;
+		box-shadow: 0 3px 16px #0009;
+		border-right: #7d0d0d 2px solid;
+	}
+	
+}
+
+#aside-nav ul li {
+    margin-top: 24px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+#aside-nav ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+#aside-nav ul li a:hover {
+	color: #e02832;
+}
+
+
+
+
+#aside-nav ul li.social-icons {
+    border-top: 2px solid #c8c8c8;
+	border-bottom: 2px solid #c8c8c8;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    font-size: 25px;
+	line-height: 0;
+}
+
+#aside-nav ul li.social-icons a {
+	margin-right: 50px;
+}
+
+#aside-nav ul li.social-icons a:hover {
+	color: #e02832;
+}
+
+
+
+#aside-nav ul li:first-of-type {
+	margin-top: 28px;
+}
+
+.nav-opener.close {
+    width: 22px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Times New Roman';
+	font-weight: 100;
+	color: $white;
+	text-decoration: none;
+}
+
+.nav-opener.close:hover {
+	color: #e02832;
+}
+
+.nav-top {
+	border-bottom: 2px solid #d0d0d0;
+}
+
+
+.nav-bottom {
+	margin-top: 24px;
+    font-size: 18px;
+    padding-left: 20px;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
+.nav-drop, .nav-drop .jcf-scrollable {
+	background: #1e748b;
+    background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1e748b), color-stop(100%, #001b24), to(#e9e9e9));
+    background: -o-linear-gradient(left, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+    background: linear-gradient(90deg, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+}
+
+#hamburger-holder {
+	height: 100%;
+    cursor: pointer;
+	position: relative;
+	height: 13px;
+	width: 32px;
+	right: 13px;
+}
+
+
+
+.hamburger {
+	width: 23px;
+	height: 3px;
+	background-color: $white;
+	&::before {
+		content: '';
+		position: absolute;
+    	width: 100%;
+    	height: 3px;
+    	background-color: $white;
+		top: 6px;
+	}
+	&::after {
+		content: '';
+    	width: 100%;
+    	background-color: #000;
+    	position: absolute;
+		border-radius: 5px;
+		height: 3px;
+		background-color: $white;
+		top: 12px;
+	}
+}
+
+
+.hamburger:hover, .hamburger:hover:before, .hamburger:hover:after {
+    background-color: #e02832;
+}
+
+@include media {
+	.hamburger {
+		top: calc(62px / 2 - 13px / 2);
+	}
+}
+
+
+
+//*******************//
