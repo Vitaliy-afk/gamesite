@@ -266,11 +266,13 @@ header .buttons>.logged>div {
 #social-nav-holder {
 	display: flex;
 	// background: rgb(65, 64, 64);
-	padding: 5px 5px;
 	width: 30%;
 	justify-content: space-around;
-	border-radius: 15px;
-	font-size: 20px;
+	a {
+		font-size: 18px;
+		
+	}
+	
 }
 
 #social-nav-holder a:hover{

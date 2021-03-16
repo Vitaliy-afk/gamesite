@@ -961,12 +961,13 @@ header .buttons > .logged > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 5px;
   width: 30%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-radius: 15px;
-  font-size: 20px;
+}
+
+#social-nav-holder a {
+  font-size: 18px;
 }
 
 #social-nav-holder a:hover {
@@ -1200,7 +1201,7 @@ footer span {
 
 .colright {
   position: absolute;
-  top: 87px;
+  top: 85px;
   left: 100%;
   right: 0;
   border-left: #353535 3px solid;
@@ -1428,14 +1429,13 @@ video poster {
 .article-block {
   color: #fff;
   text-align: center;
-  padding: 170px 30px 30px 30px;
-  min-height: 300px;
+  padding: 315px 30px 30px 30px;
+  min-height: 400px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: block;
   width: 100%;
-  min-height: 300px;
   position: relative;
   -webkit-transition: -webkit-box-shadow .2s ease-in-out;
   transition: -webkit-box-shadow .2s ease-in-out;
@@ -1460,7 +1460,7 @@ video poster {
   font-size: 0;
   width: 50px;
   height: 50px;
-  bottom: 25%;
+  bottom: 40%;
 }
 
 .row .slick-prev.slick-arrow {
@@ -1471,7 +1471,7 @@ video poster {
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  right: 80%;
+  right: 92%;
   -webkit-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -1491,7 +1491,7 @@ video poster {
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  left: 80%;
+  left: 92%;
 }
 
 .row .slick-next.slick-arrow:hover {
@@ -1529,19 +1529,39 @@ video poster {
      object-position: center;
 }
 
-.article-block a .title .ttype {
+.article-block .ttype {
   color: #180f0f;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
   font-family: 'Fredoka One', cursive;
-  font-family: 'Jomhuria', cursive;
-  color: bisque;
+  color: #fcfcfc;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1e748b), color-stop(100%, #001b24), to(#e9e9e9));
+  background: -o-linear-gradient(left, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+  background: linear-gradient(90deg, #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+  -webkit-transform: translate(0px, 25px);
+      -ms-transform: translate(0px, 25px);
+          transform: translate(0px, 25px);
+  max-width: 660px;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
-.article-block .title span {
-  font-size: 0.6em;
+.article-block .ttype:hover {
+  background: #2379c0d3;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.article-block .ttype span {
+  font-size: 1em;
   color: bisque;
-  padding-top: 10px;
+  text-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
 }
 
 .article-block a:hover:before {
@@ -1565,7 +1585,6 @@ video poster {
   color: #d81313;
   font-size: 12px;
   display: block;
-  margin-top: 10px;
 }
 
 .article-block .t-comments:hover {
@@ -1657,10 +1676,6 @@ video poster {
   text-shadow: 5px 0px 2px rgba(80, 184, 179, 0.59);
 }
 
-.featured-title:hover {
-  color: #e02832;
-}
-
 .videos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1745,7 +1760,7 @@ video poster {
   text-decoration: none;
   text-transform: uppercase;
   padding: 2%;
-  border-left: 9px solid #11bd20a6;
+  border-left: 9px solid #ffffff;
   font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;

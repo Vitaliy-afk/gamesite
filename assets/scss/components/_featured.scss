@@ -1,8 +1,3 @@
-// #featured div {
-//     text-align: center;
-//     color: $white;
-// }
-
 .featured-title h1 {
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
@@ -19,9 +14,7 @@
     text-shadow: 5px 0px 2px rgba(80, 184, 179, 0.59);
 }
 
-.featured-title:hover {
-    color: #e02832;
-}
+
 
 .videos {
     display: flex;
@@ -56,8 +49,6 @@
     display: block;
    
 }
-
-
 
 
 .primary-item {
@@ -111,21 +102,11 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 2%;
-    border-left: 9px solid #11bd20a6;
+    border-left: 9px solid #ffffff;
     font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    // background: rgb(220, 20, 20);
     width: 100%;
 }
-
-// .video-wrapper .primary-text:first-of-type {
-//     background: #013f41db;
-// }
-
-// .video-wrapper .primary-text :last-child {
-//     background: rgb(220, 20, 20);
-// }
-
 
 .primary-title {
     &.color-red {
@@ -168,13 +149,6 @@
     height: 100%;
     transition: box-shadow .3s;
 }
-
-// .primary-item a:hover, .secondary-item a:hover {
-//     border: 1px solid gray;
-// }
-
-
-
 
 .featured-article-image-container-gradient {
     position: absolute;

@@ -13,12 +13,11 @@
 .article-block {
     color: $white;
     text-align: center;
-    padding: 170px 30px 30px 30px;
-    min-height: 300px;
+    padding: 315px 30px 30px 30px;
+    min-height: 400px;
     align-items: center;
     display: block;
     width: 100%;
-    min-height: 300px;
     position: relative;
     transition: box-shadow .2s ease-in-out;
     text-decoration: none;
@@ -43,7 +42,7 @@
     font-size: 0;
     width: 50px;
     height: 50px;
-    bottom: 25%;
+    bottom: 40%;
 }
 
 
@@ -55,7 +54,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    right: 80%;
+    right: 92%;
     transition: .3s ease-in-out;
     &:hover {
         box-shadow: 0 3px 16px #0009;
@@ -75,7 +74,7 @@
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    left: 80%;
+    left: 92%;
     &:hover {
         box-shadow: 0 3px 16px #0009;
     }
@@ -112,20 +111,34 @@
 
 
 
-.article-block a .title .ttype{
+.article-block .ttype {
     color: rgb(24, 15, 15);
-    font-size: 1em;
+    font-size: 0.8em;
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
-    font-family: 'Jomhuria', cursive;
-    color: bisque;
+    color: rgb(252, 252, 252);
+    padding: 5px;
+    background: linear-gradient( 
+90deg
+ , #1e748b 12%, #001b24 100%, #e9e9e9 100%);
+    transform: translate(0px, 25px);
+    max-width: 660px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    transition-duration: 2s;
 }
 
-.article-block .title span {
-    font-size: 0.6em;
+.article-block .ttype:hover {
+    background: #2379c0d3;
+    transition-duration: 2s;
+} 
+
+
+.article-block .ttype span {
+    font-size: 1em;
     color: bisque;
-    padding-top: 10px;
-    
+    text-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
 }
 
 .article-block a:hover {
@@ -153,7 +166,6 @@
     color: rgb(216, 19, 19);
     font-size: 12px;
     display: block;
-    margin-top: 10px;
 
 }
 
@@ -225,5 +237,4 @@
 .features .m-blocks h3 {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    
 }
