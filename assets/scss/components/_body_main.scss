@@ -8,22 +8,24 @@
     border-radius: 10px 10px 0 0;
     font-size: 20px;
     image-rendering: auto;
-    padding: 100px 20px 0px;
+    padding: 120px 20px 0px;
     border: 2px solid #3e403b;
     box-shadow: 0 1px 10px #131313;
 }
 
-.top_games .top_games_link {
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+.top_games {
+    .top_games_link {
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
 }
 
 .top_games {
@@ -37,17 +39,23 @@
     margin-bottom: 20px;
 }
 
-.top_games .more {
-    position: absolute;
-    right: 12px;
-    font: 15px roboto,Verdana,Tahoma;
-    text-decoration: none;
-    color: #adadad;
-    top: 6px;
+.top_games {
+    .more {
+        position: absolute;
+        right: 12px;
+        font: 15px roboto,Verdana,Tahoma;
+        text-decoration: none;
+        color: #adadad;
+        top: 6px;
+    }
 }
 
-.body_main .slider .slider__item-card {
-    position: relative;
+.body_main {
+    .slider {
+        .slider__item-card {
+            position: relative;
+        }
+    }
 }
 
 .body_main .slider .slider__item-card > a {
@@ -75,11 +83,22 @@
 
 
 .body_main .slider .slider__item:hover {
-    border: 2px solid grey;
+    border: 2px solid rgba(214, 178, 18, 0.904);
 }
 
 .body_main .slider .slider__item-card div:hover {
-    color: #e02832;
+    color: #dd9e17f8;
+}
+
+
+.features {
+    .m-blocks {
+        .slick-list {
+            &.draggable{
+                border-radius: 20px;
+            }
+        }
+    }
 }
 
 .slider__item {

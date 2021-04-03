@@ -1,0 +1,60 @@
+.video {
+    position: relative;
+    background-color: var(--video-bg);
+   //  border-radius: 69px 75px 0;
+    overflow: hidden;
+    transition: 0.4s;
+    &.anim {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      border-radius: inherit;
+   }
+   &-wrapper {
+      width: 100%;
+      height: 100%;
+   }
+   &:hover {
+      video {
+         transform: scale(1.2);
+         transform-origin: center;
+         // background-position: center;
+         // background-size: cover;
+      }
+   }
+   video {
+      display: block;
+      cursor: pointer;
+      transition: 0.4s;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+
+   }
+}
+
+.window {
+   flex: 0 0 50%;
+   max-width: 50%;
+   width: 100%;
+   padding: 0 15px;
+   border-radius: 20px;
+   position: relative;
+}
+
+.video {
+   transition: 1s;
+   &:hover {
+      box-shadow: -5px -2px 33px 10px rgba(241, 218, 3, 0.89);
+      border-radius: 20px
+   }
+}
+
+.oferflow {
+   overflow: hidden;
+}
+
+video{
+   object-fit: inherit;
+   }
