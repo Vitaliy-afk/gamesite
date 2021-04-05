@@ -10,7 +10,18 @@
     left: 0;
     right: 0;
 	z-index: 1000;
-	.container {
+	.container-top {
+		align-items: center;
+		text-align: center;
+		a {
+			display: block;
+			@include media {
+				img {
+				}
+			}
+		}
+	}
+	.container-middle{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -24,21 +35,31 @@
 	}
 }
 
-.header .buttons>.logged {
-    width: auto;
+.header {
+	.buttons> {
+		.logged {
+   			 width: auto;
+		}
+	}
 }
 
-.header .buttons>.logged .profile2 span {
-    position: absolute;
-    left: 80%;
-    font: 10px roboto,Tahoma;
-    background: #da0606;
-    border-radius: 2px;
-    line-height: 14px;
-    text-align: center;
-    padding: 2px 4px 1px;
-    color: #fff;
-    box-shadow: 0 1px 5px #5f0101;
+.header {
+	.buttons> {
+		.logged {
+			.profile2 span {
+    			position: absolute;
+    			left: 80%;
+    			font: 10px roboto,Tahoma;
+    			background: #da0606;
+    			border-radius: 2px;
+    			line-height: 14px;
+    			text-align: center;
+   	 			padding: 2px 4px 1px;
+    			color: #fff;
+    			box-shadow: 0 1px 5px #5f0101;
+			}
+		}
+	}
 }
 
 
@@ -61,6 +82,24 @@ header .buttons>.logged>div {
 }
 
 
+
+.header-login {
+	// background-position: center center;
+    // width: 32px;
+    // height: 32px;
+    // border-radius: 60px!important;
+    // margin: 4px 25px 0 8px;
+	// background-size: contain;
+	// position: absolute;
+	// left: 80%;
+	// top: 25px; cursor: pointer;
+}
+
+.header-middle {
+	max-width: 800px;
+	margin: 0 auto;
+	justify-content: center;
+}
 
 .header {
 	.submenu {
@@ -202,6 +241,7 @@ header .buttons>.logged>div {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	justify-content: center;
 }
 
 #sidebar {
@@ -227,10 +267,11 @@ header .buttons>.logged>div {
 
 
 #social-nav-holder {
-	display: flex;
+	position: absolute;
+	padding: 1% 1% 1% 1%;
+	right: 25%;
+	top: 0;
 	// background: rgb(65, 64, 64);
-	width: 30%;
-	justify-content: space-around;
 	a {
 		font-size: 18px;
 
@@ -245,11 +286,12 @@ header .buttons>.logged>div {
 #social-nav-holder a {
 	color: rgb(156, 166, 168);
 	font-size: 26px;
+	margin-right: 10px;
 }
 
 
-#sidebar > .f_search {
-	padding: 0 100px 0 20px;
+.header .f_search {
+	// padding: 0 100px 0 20px;
     white-space: nowrap;
 	display: flex;
 	width: 100%;
@@ -262,18 +304,19 @@ header .buttons>.logged>div {
 
 .header {
 	.hldr {
+		max-width: 600px;
+		margin: 0 auto;
 		width: 100%;
-		margin-right: 10px;
 		border-radius: 15px;
 		background: #1e748b;
 	}
 }
 
-.header .logo {
-	position: relative;
+.header-logo {
 	right: 80px;
 	color: wheat;
-	margin-right: 10px;
+	text-align: center;
+	margin-bottom: 25px;
 	img {
 		height: 50px;
 	}

@@ -89,99 +89,112 @@
             </div>
 		</div>
 		<header class="header">
-			<div class="container">
-				<div class="logo">
-					<a href="/" >
-						<img src="./assets/image/logo.png" alt="image">
-					</a>
-				</div>
-				<div id="hamburger-holder">
-					<div class="hamburger">
-
+			<div class="header-top">
+				<div class="container">
+					<div class="header-logo">
+						<a href="/" >
+							<img src="./assets/image/logo.png" alt="image">
+						</a>
+					</div>
+					<div class="hamburger-search">
+						<div id="hamburger-holder">
+							<div class="hamburger">
+	
+							</div>
+						</div>
+						<div class="f_search">
+							<div class="hldr">
+								<input type="text" onfocus="this.removeAttribute('readonly');" autocomplete="off" placeholder="Поиск" class="fs_inp">
+							</div>
+						</div>
+					</div>
+					<div class="header-middle">
+						<ul id="sidebar" class="menu">
+							<li class="drotted">
+								<a href="#">Новости</a>
+								<ul class="submenu">
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости игр</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Железо и технологии</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Кино и сериалы</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Видео</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости халявы</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Распродажи и скидки</span></a></li>
+								</ul>
+							</li>
+							<li class="drotted"><a href="#">Тесты</a>
+							</li> 
+							<li class="drotted"><a href="#">Статьи</a>
+								<ul class="submenu">
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Обзоры игр</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Превью игр</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Обзоры железа и аксессуаров</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Топы и подборки</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Косплей</span></a></li> 
+								</ul>
+							</li>
+							<li class="drotted"><a href="#">Игры</a>
+								<ul class="submenu">
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Календарь и даты выхода</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Популярные на этой неделе</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Самые ожидаемые игры</span></a></li>  
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новые скриншоты</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Подборки игр</span></a></li>
+								</ul>
+							</li>
+							<li class="drotted"><a href="#">Файлы</a>
+								<ul class="submenu" >
+								<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Все файлы для игр</span></a></li>                              
+								<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Трейнеры для игр</span></a></li>
+								<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Сохранения</span></a></li>                                                                          
+							</ul>
+							</li>
+							<li class="drotted"><a href="#"><span>Гайды</span></a></li> 
+							<li class="drotted"><a href="#">Форум</a>
+									<ul class="submenu"> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости халявы</span></a></li> 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости о скидках</span></a></li>                                 
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Поиск скидок - агрегатор</span></a></li>  
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Свежие скидки в Steam</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Скидки в PS Store</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Рулетка + таверна - бесплатные игры</span></a></li>
+									<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Раздачи ключей</span></a></li>
+								</ul>
+							</li> 
+							<!-- <li class="f_search">
+								<div class="hldr">
+									<input type="text" onfocus="this.removeAttribute('readonly');" autocomplete="off" placeholder="Поиск" class="fs_inp">
+								</div>
+							</li> -->
+						</ul>
 					</div>
 				</div>
-				<ul id="sidebar" class="menu">
-					<li class="drotted">
-						<a href="#">Новости</a>
-						<ul class="submenu">
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости игр</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Железо и технологии</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Кино и сериалы</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Видео</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости халявы</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Распродажи и скидки</span></a></li>
-						</ul>
-					</li>
-					<li class="drotted"><a href="#">Тесты</a>
-					</li> 
-					<li class="drotted"><a href="#">Статьи</a>
-						<ul class="submenu">
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Обзоры игр</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Превью игр</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Обзоры железа и аксессуаров</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Топы и подборки</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Косплей</span></a></li> 
-						</ul>
-					</li>
-					<li class="drotted"><a href="#">Игры</a>
-						<ul class="submenu">
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Календарь и даты выхода</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Популярные на этой неделе</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Самые ожидаемые игры</span></a></li>  
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новые скриншоты</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Подборки игр</span></a></li>
-						</ul>
-					</li>
-					<li class="drotted"><a href="#">Файлы</a>
-						<ul class="submenu" >
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Все файлы для игр</span></a></li>                              
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Трейнеры для игр</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Сохранения</span></a></li>                                                                          
-						</ul>
-					</li>
-					<li class="drotted"><a href="#"><span>Гайды</span></a></li> 
-					<li class="drotted"><a href="#">Форум</a></li>
-						<ul class="submenu"> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости халявы</span></a></li> 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Новости о скидках</span></a></li>                                 
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Поиск скидок - агрегатор</span></a></li>  
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Свежие скидки в Steam</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Скидки в PS Store</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Рулетка + таверна - бесплатные игры</span></a></li>
-							<li><a href="#"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>Раздачи ключей</span></a></li>
-						</ul>
-					</li> 
-					<li class="f_search">
-						<div class="hldr">
-							<input type="text" onfocus="this.removeAttribute('readonly');" autocomplete="off" placeholder="Поиск" class="fs_inp">
-						</div>
-					</li>
-				</ul>
 				<nav id="social-nav-holder" class="top-nav-standard">
 					<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 					<a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 					<a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				</nav>
-				<ul class="buttons">
-					<li class="logged">
-						<a class="profile2" href="#"><span>1</span></a>
-						<div class="profile">
-							<a class="pl" href="#">
-								<span>Посетитель&nbsp;&nbsp;
-									<span class="stars"><i class="fa fa-star" style="color: #40d3ff" aria-hidden="true"></i><i class="fa fa-star" style="color: #40d3ff" aria-hidden="true"></i></span>
-									<span class="level">4 lvl.</span>
-								</span>
-							</a>
-							<ul>
-								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Профиль</a></li>
-								<li class="pm"><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Личные сообщения<span class="num"></span></a></li>
-								<li><a href="#" class="uved"><i class="fa fa-bell" aria-hidden="true"></i>Уведомления</a></li>
-								<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Избранное</a></li>
-								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+				<div class="header-login">
+					<ul class="buttons">
+						<li class="logged">
+							<a class="profile2" href="#"><span>2</span></a>
+							<div class="profile">
+								<a class="pl" href="#">
+									<span>Посетитель&nbsp;&nbsp;
+										<span class="stars"><i class="fa fa-star" style="color: #40d3ff" aria-hidden="true"></i><i class="fa fa-star" style="color: #40d3ff" aria-hidden="true"></i></span>
+										<span class="level">4 lvl.</span>
+									</span>
+								</a>
+								<ul>
+									<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Профиль</a></li>
+									<li class="pm"><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Личные сообщения<span class="num"></span></a></li>
+									<li><a href="#" class="uved"><i class="fa fa-bell" aria-hidden="true"></i>Уведомления</a></li>
+									<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Избранное</a></li>
+									<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<div class="body_main">

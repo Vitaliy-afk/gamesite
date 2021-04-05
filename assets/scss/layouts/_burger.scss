@@ -23,6 +23,17 @@
 
 }
 
+// .nav-active {
+// 		&.close {
+// 			&:hover {
+// 				color: rgb(255, 187, 0);
+// 			}
+// 		}
+	
+// }
+
+
+
 #aside-nav {
 	ul {
 		li {
@@ -70,24 +81,25 @@
 	margin-top: 28px;
 }
 
-.nav-opener.close {
-    width: 22px;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 50px;
-    line-height: 50px;
-    font-family: 'Times New Roman';
-	font-weight: 100;
-	color: $white;
-	text-decoration: none;
-}
-
 .nav-opener {
-	.close:hover {
-		color: #e02832;
+	&.close {
+    	width: 22px;
+    	position: absolute;
+    	top: 0;
+    	right: 20px;
+    	font-size: 50px;
+    	line-height: 50px;
+    	font-family: 'Times New Roman';
+		font-weight: 100;
+		color: $white;
+		text-decoration: none;
+		&:hover {
+			color: rgb(209, 142, 17);
+		}
 	}
 }
+
+
 
 .nav-top {
 	border-bottom: 2px solid #d0d0d0;
@@ -112,18 +124,24 @@
 }
 
 #hamburger-holder {
+	display: inline-block;
 	height: 100%;
     cursor: pointer;
 	position: relative;
 	height: 13px;
 	width: 32px;
-	right: 13px;
+	left: 70px;
+
 }
 
-
+.hamburger-search {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
 
 .hamburger {
-	width: 23px;
+	width: 100%;
 	height: 3px;
 	background-color: $white;
 	&::before {
@@ -151,11 +169,11 @@
     background-color: #daa209;
 }
 
-@include media {
-	.hamburger {
-		top: calc(62px / 2 - 13px / 2);
-	}
-}
+// @include media {
+// 	.hamburger {
+// 		top: calc(62px / 2 - 13px / 2);
+// 	}
+// }
 
 
 
