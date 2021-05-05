@@ -76,6 +76,7 @@ function initSlickSlider() {
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: true,
+
 		  }
 		},
 		{
@@ -90,14 +91,16 @@ function initSlickSlider() {
 		  breakpoint: 600,
 		  settings: {
 			slidesToShow: 1,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			arrows: false,
 		  }
 		},
 		{
 		  breakpoint: 480,
 		  settings: {
 			slidesToShow: 1,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			arrows: false,
 		  }
 		}
 	  ]
@@ -134,14 +137,16 @@ function initSlickSlider() {
 			  breakpoint: 600,
 			  settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				arrows: false,
 			  }
 			},
 			{
 			  breakpoint: 480,
 			  settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				arrows: false,
 			  }
 			}
 		]

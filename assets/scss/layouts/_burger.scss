@@ -128,16 +128,34 @@
 	height: 100%;
     cursor: pointer;
 	position: relative;
-	height: 13px;
+	height: 16px;
 	width: 32px;
 	left: 70px;
-
+	top: 0;
+	@include media('<1024px'){
+		display: inline-block;
+		height: 100%;
+		cursor: pointer;
+		position: relative;
+		height: 13px;
+		width: 32px;
+		left: 50%;
+		right: 50%;
+		top: 50px;
+	}
+	
 }
 
 .hamburger-search {
 	display: flex;
-	align-items: center;
 	margin-bottom: 25px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff87;
+    border-radius: 20px
+	// @include media('>1024px'){
+	// 	align-items: center;
+	// }
 }
 
 .hamburger {

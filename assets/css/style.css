@@ -539,8 +539,6 @@ th {
   position: absolute;
   z-index: 50;
   font-size: 0;
-  width: 50px;
-  height: 50px;
   top: 26%;
 }
 
@@ -961,11 +959,12 @@ header .buttons > .logged > div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1em;
 }
 
 #sidebar a {
   color: #fff;
-  font-size: 16px;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -1006,7 +1005,6 @@ header .buttons > .logged > div {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border: 0;
 }
 
 #sidebar > li {
@@ -1014,7 +1012,7 @@ header .buttons > .logged > div {
 }
 
 .header .hldr {
-  max-width: 600px;
+  max-width: 765px;
   margin: 0 auto;
   width: 100%;
   border-radius: 15px;
@@ -1026,6 +1024,12 @@ header .buttons > .logged > div {
   color: wheat;
   text-align: center;
   margin-bottom: 25px;
+}
+
+.header-logo a {
+  -webkit-box-shadow: 0 0 89px;
+          box-shadow: 0 0 89px;
+  background-color: aqua;
 }
 
 .header-logo img {
@@ -1154,19 +1158,25 @@ header .buttons > .logged > div {
   height: 100%;
   cursor: pointer;
   position: relative;
-  height: 13px;
+  height: 16px;
   width: 32px;
   left: 70px;
+  top: 0;
 }
 
 .hamburger-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  background-color: #ffffff87;
+  border-radius: 20px;
 }
 
 .hamburger {
@@ -1837,6 +1847,7 @@ video poster {
   font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
+  border-radius: 7px;
 }
 
 .primary-item, .secondary-item {
@@ -2113,4 +2124,21 @@ video poster {
 video {
   -o-object-fit: inherit;
      object-fit: inherit;
+}
+
+@media (max-width: 1023px) {
+  .header-middle {
+    display: none;
+  }
+  #hamburger-holder {
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    height: 13px;
+    width: 32px;
+    left: 50%;
+    right: 50%;
+    top: 50px;
+  }
 }
